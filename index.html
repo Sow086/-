@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز الفنادق - اعثر على إقامتك المثالية</title>
+    <!-- CSS bestand koppelen -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header - رأس الصفحة -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">فندق </div>
+            <nav class="nav-links">
+                <a href="#">الرئيسية</a>
+                <a href="#">الفنادق</a>
+                <a href="#">العروض</a>
+                <a href="#">اتصل بنا</a>
+                <a href="#">تسجيل الدخول</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section - قسم الترحيب الرئيسي -->
+    <section class="hero">
+        <div class="container">
+            <h1>ابحث عن إقامتك المثالية</h1>
+            <p>أكثر من مليون فندق حول العالم بأفضل ضمان للأسعار</p>
+            
+            <!-- Search Form - نموذج البحث -->
+            <div class="search-form">
+                <form id="search-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destination">الوجهة</label>
+                            <input type="text" id="destination" placeholder="إلى أين تريد الذهاب؟">
+                        </div>
+                        <div class="form-group">
+                            <label for="check-in">تسجيل الدخول</label>
+                            <input type="date" id="check-in">
+                        </div>
+                        <div class="form-group">
+                            <label for="check-out">تسجيل الخروج</label>
+                            <input type="date" id="check-out">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">الضيوف</label>
+                            <select id="guests">
+                                <option value="1">شخص بالغ واحد</option>
+                                <option value="2" selected>شخصان بالغان</option>
+                                <option value="3">3 أشخاص بالغين</option>
+                                <option value="4">4 أشخاص بالغين</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="rooms">الغرف</label>
+                            <select id="rooms">
+                                <option value="1" selected>غرفة واحدة</option>
+                                <option value="2">غرفتان</option>
+                                <option value="3">3 غرف</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <button type="submit" class="search-btn">بحث</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   <!-- Hotel Listings - قائمة الفنادق -->
+<section class="hotels-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>الفنادق الشعبية</h2>
+            <p>اكتشف أفضل وأكثر أماكن الإقامة حجزًا لدينا</p>
+        </div>
+        
+        <div class="hotel-grid">
+            <!-- Hotel Card 1 - بطاقة الفندق الأولى -->
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <!-- الصورة داخل عنصر hotel-image للحصول على التنسيق الصحيح -->
+                    <img src="img/los-angeles-1629161_1920.jpg" alt="صورة فندق جراند أمستردام">
+                </div>
+                <div class="hotel-details">
+                    <h3 class="hotel-name">فندق جراند أمستردام</h3>
+                    <div class="hotel-location">
+                        <span>وسط أمستردام</span>
+                    </div>
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <div class="review-count">(246 تقييم)</div>
+                    </div>
+                    <div class="hotel-price">
+                        €145 <span>في الليلة</span>
+                    </div>
+                    <a href="#" class="view-btn book-now" data-hotel="فندق جراند أمستردام">احجز الآن</a>
+                </div>
+            </div>
+            
+            <!-- Hotel Card 2 - بطاقة الفندق الثانية -->
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <img src="img/hotel-595121_1920.jpg" alt="صورة منتجع سيسايد">
+                </div>
+                <div class="hotel-details">
+                    <h3 class="hotel-name">منتجع سيسايد</h3>
+                    <div class="hotel-location">
+                        <span>شيفينينغن</span>
+                    </div>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <div class="review-count">(189 تقييم)</div>
+                    </div>
+                    <div class="hotel-price">
+                        €120 <span>في الليلة</span>
+                    </div>
+                    <a href="#" class="view-btn book-now" data-hotel="منتجع سيسايد">احجز الآن</a>
+                </div>
+            </div>
+            
+            <!-- Hotel Card 3 - بطاقة الفندق الثالثة -->
+            <div class="hotel-card">
+                <div class="hotel-image">
+                    <img src="img/swimming-pool-2128578_1920.jpg" alt="صورة فندق أضواء المدينة">
+                </div>
+                <div class="hotel-details">
+                    <h3 class="hotel-name">فندق أضواء المدينة</h3>
+                    <div class="hotel-location">
+                        <span>روتردام</span>
+                    </div>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <div class="review-count">(152 تقييم)</div>
+                    </div>
+                    <div class="hotel-price">
+                        €110 <span>في الليلة</span>
+                    </div>
+                    <a href="#" class="view-btn book-now" data-hotel="فندق أضواء المدينة">احجز الآن</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Features Section - قسم المميزات -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>لماذا تختار فندق بوك؟</h2>
+                <p>نجعل حجز إقامتك سهلاً وخاليًا من المتاعب</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>ضمان أفضل سعر</h3>
+                    <p>نطابق أي سعر تجده على الإنترنت لنفس الحجز.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>تأكيد فوري</h3>
+                    <p>استلم تأكيد الحجز مباشرة في بريدك الإلكتروني.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>بدون رسوم حجز</h3>
+                    <p>لا نتقاضى أي رسوم إضافية فوق سعر الغرفة.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>دفع آمن</h3>
+                    <p>بياناتك آمنة مع طرق الدفع المؤمنة لدينا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>فندق بوك</h3>
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">خدماتنا</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>خدمة العملاء</h3>
+                    <ul>
+                        <li><a href="#">مركز المساعدة</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                        <li><a href="#">تقديم ملاحظات</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>الوجهات</h3>
+                    <ul>
+                        <li><a href="#">أمستردام</a></li>
+                        <li><a href="#">روتردام</a></li>
+                        <li><a href="#">لاهاي</a></li>
+                        <li><a href="#">أوتريخت</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>النشرة الإخبارية</h3>
+                    <p>اشترك للحصول على عروض حصرية</p>
+                    <form>
+                        <input type="email" placeholder="بريدك الإلكتروني" style="width: 100%; padding: 10px; margin-top: 10px; border-radius: 4px; border: none;">
+                        <button type="submit" class="search-btn" style="width: 100%; margin-top: 10px;">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 فندق بوك. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal - نافذة الحجز -->
+    <div class="modal" id="booking-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-hotel-name">حجز الفندق</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="booking-name">الاسم</label>
+                    <input type="text" id="booking-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-email">البريد الإلكتروني</label>
+                    <input type="email" id="booking-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-phone">رقم الهاتف</label>
+                    <input type="tel" id="booking-phone">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="booking-checkin">تسجيل الدخول</label>
+                        <input type="date" id="booking-checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-checkout">تسجيل الخروج</label>
+                        <input type="date" id="booking-checkout" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="booking-guests">الضيوف</label>
+                        <select id="booking-guests">
+                            <option value="1">شخص بالغ واحد</option>
+                            <option value="2" selected>شخصان بالغان</option>
+                            <option value="3">3 أشخاص بالغين</option>
+                            <option value="4">4 أشخاص بالغين</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-rooms">الغرف</label>
+                        <select id="booking-rooms">
+                            <option value="1" selected>غرفة واحدة</option>
+                            <option value="2">غرفتان</option>
+                            <option value="3">3 غرف</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="booking-requests">طلبات خاصة</label>
+                    <textarea id="booking-requests" rows="3"></textarea>
+                </div>
+                <button type="submit" class="search-btn">تأكيد الحجز</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS bestand koppelen -->
+    <script src="script.js"></script>
+</body>
+</html>
